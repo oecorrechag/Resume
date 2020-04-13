@@ -1,17 +1,17 @@
 # Site settings
-title: prueba.io
-description: Prueba de ejecicion
+title: -Resume-
+description: WebSite
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Oscar Correcha
-user_description: Texto bajo.
-user_title: Estadistica Analitica
-email: vaness_bunny@live.com.ar
-twitter_username: https://twitter.com/Paulichis_zui
-github_username:  https://twitter.com/Paulichis_zui
-gplus_username:  https://twitter.com/Paulichis_zui
+user_description: Consultor con formación profesional en análisis de datos con conocimientos en modelación estadística, analítica y machine learning.
+user_title: Statistics Student
+email: oecorrechag@unal.edu.co
+twitter_username: https://twitter.com/RN71943357
+github_username:  https://github.com/oecorrechag
+#gplus_username:  
 
 # Google-analytics
 google-analytics:
