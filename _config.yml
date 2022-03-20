@@ -2,7 +2,6 @@
 title: -Resume-
 description: WebSite
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Oscar Correcha
@@ -11,7 +10,6 @@ user_title: Statistics - DATA SCIENTIST
 email: oecorrechag@unal.edu.co
 twitter_username: https://twitter.com/RN71943357
 github_username:  https://github.com/oecorrechag
-#gplus_username:  
 
 # Google-analytics
 google-analytics:
