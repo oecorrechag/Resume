@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Clasificación de granos de Café</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header s-header--opaque">
+
+        <div class="s-header__logo">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png"  alt="Homepage">
+            </a>
+        </div>
+
+        <div class="row s-header__navigation">
+
+            <nav class="s-header__nav-wrap">
+
+                <h3 class="s-header__nav-heading h6">Navigate to</h3>
+
+                <ul class="s-header__nav">
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Categories</a>
+                        <ul class="sub-menu">
+                            <li><a href="topicos/clasificacion.html"> Clasificación </a></li>
+                            <li><a href="topicos/clustering.html"> Clustering </a></li>
+                            <li><a href="topicos/regresion.html"> Regresión </a></li>
+                            <li><a href="topicos/descriptivo.html"> Análisis descriptivo y otros </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="includes/contact.html" title="">Contact</a></li>
+                </ul> <!-- end s-header__nav -->
+
+                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
+
+            </nav> <!-- end s-header__nav-wrap -->
+
+        </div> <!-- end s-header__navigation -->
+
+        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- content
+    ================================================== -->
+    <section class="s-content">
+
+        <div class="row">
+            <div class="column large-12">
+
+                <article class="s-content__entry format-standard">
+
+                    <div class="s-content__media">
+                        <div class="s-content__post-thumb center-image">
+                            <img src="images/thumbs/masonry/coffee-600.png" 
+                                 srcset="images/thumbs/masonry/coffee-1200.png 2100w, 
+                                         images/thumbs/masonry/coffee-600.png 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="Coffee">
+                        </div>
+                    </div> <!-- end s-content__media -->
+
+                    <div class="s-content__entry-header">
+                        <h1 class="s-content__title s-content__title--post">Clasificación de granos de Café</h1>
+                    </div> <!-- end s-content__entry-header -->
+
+                    <div class="s-content__primary">
+
+                        <div class="s-content__entry-content">
+
+                            <!-- <h2>Problema</h2> -->
+
+                            <p class="lead">
+                                EL COMITE NACIONAL DE CAFETEROS mediante la RESOLUCION NUMERO 5 DE 2002, dicta las 
+                                medidas conducentes a garantizar la calidad del café de Exportación, las cuales 
+                                deberán ser observadas, tanto por la Federación Nacional de Cafeteros de Colombia 
+                                como por los exportadores privados.
+                            </p> 
+
+                            <h2>Objetivo</h2>
+    
+                            <p>
+                                Desarrollar un prototipo capaz de clasificar los granos del café. <br>
+                                Reducir el porcentaje de error de error de clasificación para evitar realizar una 
+                                compensación o la devolución del cargamento. <br>
+                                A cada grano de café se realizó la toma de dos fotos, una por el frente y otra por 
+                                el reverso, sobre una hoja clara, la cual cuenta con tres cuadros de referencia de 
+                                color que miden 1 por lado.
+                            </p>
+
+                            <ul>
+                                <li>El experimento es no balanceado.</li>
+                                <li>Dimensiones: 740 x 480 pixeles, 2256 x 1504 pixeles, hasta 4272 x 2848, entre otros.</li>
+                                <li>Peso: 800 kb hasta 3.2 MB.</li>
+                                <li>Formato: jpeg.</li>
+                            </ul>
+
+                            <h2>Tipos de granos</h2>
+
+                            <p>
+                                Se realizara un clasificador de defectos de Café Verde. Los defectos tenidos en 
+                                cuenta y las caracteristicas son:
+                            </p> 
+
+                            <ul>
+                                <li> <b>Arrugados:</b> Desarrollo pobre del cafeto por sequía. Debilidad del cafeto por 
+                                    falta de fertilizantes. Número de muestras <b>72</b></li>
+                                    <li> <b>Broca:</b> Grano con pequeños orificios. <b>90</b></li>
+                                    <li> <b>Buenos:</b> Grano grande. Plano y parejo. Cumplimiento de estandares de 
+                                        calidad dados por la Green Coffee Association of New York City, Inc. (Mallas) 
+                                        <b>191</b></li>
+                                    <li> <b>Negro:</b> Grano con coloración del pardo al negro. Encogido. Arrugado. Cara 
+                                        plana hundida. Hendidura muy abierta. <b>101</b></li>
+                                    <li> <b>Decolorados:</b> Grano con alteraciones en su color normal, presenta 
+                                        colores que van desde el blanqueado, crema, amarillo hasta el carmelita. <b>200</b></li>
+                                    <li> <b>Inmaduro:</b> Grano de color verdoso o gris claro. La cutícula no desprende. 
+                                        Superficie marchita. Tamaño menor que el normal. En este grupo se incluye el 
+                                        grano del paloteo. <b>200</b></li>
+                                    <li> <b>Mordido:</b> Grano con una herida o cortada. Color oxidado. <b>123</b></li>
+                                    <li> <b>Vinagre:</b> Grano con coloración del crema al carmelita oscuro.
+                                        Hendidura libre de tegumentos. Película plateada puede tender a coloraciones 
+                                        pardo rojizas. <b>113</b></li>
+                            </ul>
+
+                            <h2>Modelos</h2>
+
+                            <p>
+                                Se Ajustaron 3 modelos, una Red Neuronal Convolucional, un Bosque Aleatorio y una Regresión 
+                                Logística. Se calificaron con las métricas de f1, accuracy, precision, 
+                                recall y matriz de confusión, dándole más relevancia a esta última.
+                            </p> 
+                        
+                            <div class="center-image">
+                                <img src="images/projects/cafe/matriz.png"  alt="matriz">
+                                <img src="images/projects/cafe/precision.png"  alt="precision">
+                            </div>
+
+                            <h2>Resultados</h2>
+    
+                            <p>
+                                Inicialmente se tiene que el modelo CNN tiene problemas ya que las redes neuronales son 
+                                demandantes en imagenes por lo cual este modelo presenta sobreajuste, la Regresión 
+                                Logística es un modelo no es demandante en muestras. Al comparar las metricas númericas 
+                                la Regresión Logística presenta mejores metricas sobre todos los modelos tambien 
+                                presenta la mejor matriz de confusion, por ultimo el tiempo de ajuste de modelos el 
+                                modelo CNN tarda aproximadamente 15 minutos en ser entrenado, la Regresión Logística 
+                                tarda solo tarda 1 segundo.
+                            </p> 
+
+                            <h3>Sugerencias</h3>
+                            
+                            <p>
+                                Realizar un nuevo diseño de experimento. Aumentar las muestras, ya que estos modelos 
+                                pueden ser potencializados con mayores y mejores imagenes. Se elige la Regresión 
+                                Logística por presentar mejores tiempos y metricas.
+                            </p>
+
+
+                        </div> <!-- end s-entry__entry-content -->
+
+                        <div class="s-content__entry-meta">
+
+                            <div class="meta-bottom">
+                                
+                                <div class="entry-cat-links meta-blk">
+                                    <div class="cat-links">
+                                        <span>Tema: </span> 
+                                        <a href="topicos/vision.html"> Visión artificial </a>
+                                        <a href="#0"> Diseño de experimentos </a>
+                                    </div>
+
+                                    <span>Fecha:</span> Nov 23, 2024
+                                </div>
+
+                                <div class="entry-tags meta-blk">
+                                    <span class="tagtext">Etiquetas</span>
+                                    <a href="#">Python</a>
+                                    <a href="#">Keras</a>
+                                </div>
+
+                            </div>
+
+                        </div> <!-- s-content__entry-meta -->
+
+                        <div class="s-content__pagenav">
+                            <div class="prev-nav">
+                                <a href="https://github.com/oecorrechag/Proyecto-Mexico" rel="prev">
+                                    <span>Previo</span>
+                                    Clasificación de lenguaje de señas
+                                </a>
+                            </div>
+                            <div class="next-nav">
+                                <a href="clientes.html" rel="next">
+                                    <span>Siguiente</span>
+                                    Segmentación de clientes
+                                </a>
+                            </div>
+                         </div> <!-- end s-content__pagenav -->
+
+                    </div> <!-- end s-content__primary -->
+                </article> <!-- end entry -->
+
+            </div> <!-- end column -->
+        </div> <!-- end row -->
+
+    </section> <!-- end s-content -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="column">
+                    <div class="ss-copyright">
+                        <span>© Copyright 2024</span> 
+                        <!-- <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span> -->
+                    </div> <!-- end ss-copyright -->
+                </div>
+            </div> 
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+   </footer> <!-- end s-footer -->
+    
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
