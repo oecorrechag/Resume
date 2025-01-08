@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Calculadora de la felicidad</title>
+    <title>Análisis de la Felicidad</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -63,9 +63,10 @@
                     <li class="has-children">
                         <a href="#0" title="">Categories</a>
                         <ul class="sub-menu">
-                            <li><a href="includes/category.html">Design</a></li>
-                            <li><a href="includes/category.html">Lifestyle</a></li>
-                            <li><a href="includes/category.html">Photography</a></li>
+                            <li><a href="topicos/clasificacion.html"> Clasificación </a></li>
+                            <li><a href="topicos/clustering.html"> Clustering </a></li>
+                            <li><a href="topicos/regresion.html"> Regresión </a></li>
+                            <li><a href="topicos/descriptivo.html"> Análisis descriptivo y otros </a></li>
                         </ul>
                     </li>
                     <li><a href="includes/contact.html" title="">Contact</a></li>
@@ -93,14 +94,14 @@
 
                     <div class="s-content__media">
                         <div class="s-content__post-thumb center-image">
-                            <img src="images/thumbs/masonry/customers-600.jpg" 
-                                 srcset="images/thumbs/masonry/customers-1200.jpg 2100w, 
-                                         images/thumbs/masonry/customers-600.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="clientes">
+                            <img src="images/thumbs/masonry/tulips-600.jpg" 
+                                 srcset="images/thumbs/masonry/tulips-1200.jpg 2100w, 
+                                         images/thumbs/masonry/tulips-600.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="clientes">
                         </div>
                     </div> <!-- end s-content__media -->
 
                     <div class="s-content__entry-header">
-                        <h1 class="s-content__title s-content__title--post">Calculadora de la felicidad</h1>
+                        <h1 class="s-content__title s-content__title--post">Análisis de la Felicidad: Factores Determinantes en Madres Solteras</h1>
                     </div> <!-- end s-content__entry-header -->
 
                     <div class="s-content__primary">
@@ -110,93 +111,205 @@
                             <!-- <h2>Problema</h2> -->
 
                             <p class="lead">
-                                There are transactions from a store, we want to know who are our best customers, 
-                                and determine marketing and sales strategies. <br>
-                                RFM is abbreviation for Recency, Frequency and Monetary. It is a technique that 
-                                helps determine marketing and sales strategies based on customers' buying habits.
+                                La felicidad es un concepto subjetivo que abarca diversos aspectos de la vida, como la satisfacción personal, el bienestar emocional y la calidad de las relaciones interpersonales. En el caso de las madres solteras, este tema adquiere una relevancia especial debido a los desafíos únicos que enfrentan, como la responsabilidad de criar a sus hijos en solitario, equilibrar trabajo y familia, y manejar factores económicos y sociales que pueden influir en su bienestar general.
+                                Este proyecto tiene como objetivo explorar y analizar los factores que contribuyen a la felicidad de las madres solteras, utilizando técnicas de ciencia de datos para identificar patrones, correlaciones y posibles intervenciones que promuevan su bienestar.
                             </p> 
 
-                            <ul>
-                                <li>Recency: Time passed since the customer's last purchase.</li>
-                                <li>Frequency: Total number of purchases.</li>
-                                <li>Monetary: Total spending by the customer.</li>
-                            </ul>
+                            <!-- <img src="images\projects\clientes\segmentacion.png"  alt="tsne-gmm"> -->
 
                             <h2>Objetivo</h2>
     
                             <p>
-                                Quick sorting of shop customers.
+                                Identificar los principales factores que influyen en la percepción de felicidad de madres solteras, con el fin de ofrecer recomendaciones basadas en datos para mejorar su calidad de vida.
                             </p>
 
+                            <h2>Metodologia</h2>
+    
+                            <p>
+                                CRISP-DM
+                            </p>
+
+                            <h2>Datos utilizados</h2>
+
+                            <p>
+                                Este conjunto de datos se obtuvo a partir de las respuestas de la encuesta de calidad de vida. <br>
+                                DANE: <a href="https://microdatos.dane.gov.co/index.php/catalog/827">Microdatos</a>
+                            </p> 
+
+                            <h3>Tablas empleadas</h3>
+
                             <ul>
-                                <li>100,000 transactions</li>
-                                <li>Space of time: 2 years</li>
-                                <li>Number of clients: 33.004</li>
-                                <li>Number of products: 24</li>
-                                <li>Number of products prices: 5</li>
+                                <li>Características y composición del hogar</li>
+                                <li>Datos de la vivienda</li>
+                                <li>Servicios del hogar</li>
                             </ul>
                             
-                            <h2>Resultados</h2>
+                            <h2>Visualización de datos</h2>
+
+                            <img src="images\projects\clientes\codo.png"  alt="codo">
     
                             <p>
-                                Using rfm:
+                                El dashboard y el código fuente constituyen la base para una exploración profunda y detallada de 
+                                los datos, ofreciendo una visión holística y granular del fenómeno en estudio
                             </p> 
 
-                            <ul>
-                                <li>Champions 0.11</li>
-                                <li>Potential 0.27</li>
-                                <li>New Customers higt 0.13</li>
-                                <li>New Customers 0.11</li>
-                                <li>Need Attention 0.09</li>
-                                <li>At Risk 0.14</li>
-                                <li>About to Sleep 0.08</li>
-                                <li>Hibernating 0.04</li>
-                            </ul>
-
-    
-                            <p>
-
-                                RFM-score (from best to worst) as: 8-7-6-5-4-3-2-1 <br>
-
-                                Using rfm:
-                            </p> 
-
-                            <ul>
-                                <li>Champions 0.40</li>
-                                <li>Hibernating 0.11</li>
-                                <li>New Customers 0.22</li>
-                                <li>Potential 0.26</li>
-                            </ul>
-
-    
-                            <p>
-                                Kmeans (from best to worst) as: 0-3-2-1
-
-                                Using kmedoids:
-                            </p> 
-
-                            <ul>
-                                <li>Champions 0.39</li>
-                                <li>Potential 0.23</li>
-                                <li>Hibernating 0.13</li>
-                                <li>New Customers 0.24</li>
+                            <div>
                                 
-                            </ul>
+                                <img src="images\projects\clientes\tsne-kmeans.png"  alt="tsne-kmeans">
 
-                            <h2>Conclusiones</h2>
+                                <img src="images\projects\clientes\tsne-gmm.png"  alt="tsne-gmm">
+
+                            </div>
+
+                            <div class="column large-12">
+
+                                <h3>Resumen de medias por grupo</h3>
+                                
+                                <div class="table-responsive">
+            
+                                    <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Grupo</th>
+                                                <th>Unidades</th>
+                                                <th>Recencia</th>
+                                                <th>Frecuencia</th>
+                                                <th>Monetario</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>144</td>
+                                                <td>46.9</td>
+                                                <td>11</td>
+                                                <td>939.38</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>75</td>
+                                                <td>286.7</td>
+                                                <td>13.17</td>
+                                                <td>1149.48</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>167</td>
+                                                <td>47.8</td>
+                                                <td>19.5</td>
+                                                <td>1845.1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>249</td>
+                                                <td>43.8</td>
+                                                <td>15.52</td>
+                                                <td>1363.7</td>
+                                            </tr>
+                                            </tbody>
+                                    </table>
+            
+                                </div>
+            
+                            </div>
+
+                            <p>La documentación se complementa con una tabla detallada que presenta los estadísticos básicos de cada 
+                                grupo, ofreciendo una visión exhaustiva de los datos.</p>
+
+                            <h2>Recomendaciones</h2>
+
+                            <div class="row">
+                
+                                    <dl class="dictionary-style">
+                                        <dt><strong>Grupo 0: Clientes nuevos y ocasionales</strong></dt>
+                                            <dd>
+                                                Ofertas de bienvenida y programas de fidelización sencillos: <br>
+                                                Implementar descuentos especiales para la primera compra o programas de puntos que 
+                                                permitan acumular beneficios a corto plazo. Esto incentivará a estos clientes a 
+                                                realizar compras repetidas y a sentirse valorados.
+                                            </dd>
+                                            <dd>
+                                                Marketing de contenidos enfocado en productos básicos y tendencias actuales: <br>
+                                                Crear contenido en redes sociales y el blog de la tienda que destaque productos 
+                                                versátiles y fáciles de combinar, así como las últimas tendencias de moda. Esto 
+                                                ayudará a estos clientes a descubrir nuevos estilos y a sentirse más seguros al 
+                                                realizar sus compras.
+                                            </dd>
+                                    
+                                            
+                                            <dt><strong>Grupo 1: Grandes gastadores esporádicos</strong></dt>
+                                            <dd>
+                                                Programas de fidelización exclusivos y experiencias personalizadas: <br>
+                                                Ofrecer beneficios exclusivos como descuentos adicionales, acceso anticipado a 
+                                                nuevas colecciones o atención personalizada de un estilista. Esto hará que se 
+                                                sientan especiales y los incentivará a realizar compras de mayor valor.
+                                            </dd>
+                                            <dd>
+                                                Marketing de lujo y productos premium: <br>
+                                                Destacar la calidad y exclusividad de los productos, utilizando imágenes de alta 
+                                                calidad y descripciones detalladas. Además, ofrecer opciones de personalización o 
+                                                productos únicos para satisfacer sus gustos más exigentes.
+                                            </dd>
+                                    
+
+                                            <dt><strong>Grupo 2: Clientes leales y de alto valor</strong></dt>
+                                            <dd>
+                                                Programas de fidelización con beneficios escalonados: <br> 
+                                                Implementar un programa de fidelización que ofrezca beneficios cada vez 
+                                                más atractivos a medida que los clientes aumentan su nivel de gasto. 
+                                                Esto reforzará su lealtad y los motivará a seguir comprando.
+                                            </dd>
+                                            <dd>
+                                                Eventos exclusivos y programas de embajadores: <br> 
+                                                Organizar eventos especiales para estos clientes, como pre-lanzamientos de 
+                                                colecciones o talleres de estilo. Además, invitarlos a formar parte de un 
+                                                programa de embajadores para que recomienden la marca a sus conocidos.
+                                            </dd>
+
+
+                                            <dt><strong>Grupo 3: Clientes regulares</strong></dt>
+                                            <dd>
+                                                Programas de recompensas por referidos: <br> 
+                                                Implementar un programa que recompense a los clientes por recomendar la tienda 
+                                                a sus amigos y familiares. Esto ayudará a aumentar la base de clientes y a 
+                                                fortalecer la relación con los clientes existentes.
+                                            </dd>
+                                            <dd>
+                                                Personalización de ofertas basadas en el historial de compras: <br> 
+                                                Utilizar el historial de compras de cada cliente para enviar ofertas personalizadas 
+                                                y relevantes. Esto aumentará la probabilidad de que realicen nuevas compras y 
+                                                les mostrará que la tienda se preocupa por sus preferencias.
+                                            </dd>
+                                    
+                                    </dl>
+                
+    
+                
+                            </div> <!-- end row -->
+
+
+                            <div>
+
+                                <h2>Dashboard</h2>
+
+                                <img src="images\projects\clientes\dash.png"  alt="dash">
+
+                            </div>
+
+                            <h2>Adicionales</h2>
                             
                             <p>
-                                note: numbers of groups was random. <br>
-                                APP: <a href="https://segmentation-project.onrender.com">Visita App web</a> 
+                            
+                                <ul>
+                                    <li>Link a repositorio: <a href="https://github.com/oecorrechag/Project-Japan">Github</a></li>
+                                    <li>Link a Power BI: <a href="https://github.com/oecorrechag/Project-Australia/blob/main/notebooks/dash.pbix">Dashboard</a></li> 
+                                    <li>Aplicación shiny-R: <a href="https://akai1024.shinyapps.io/Madres/">Aplicación</a></li> 
+                                
+                                
+                                    
+                                </ul>
+                                
                             </p>
-
-                            <h3>Sugerencias</h3>
-
-                            <p>
-                                Busra Y. (Jul 6, 2020). RFM Analysis for Customer Segmentation. Medium. Recuperado de: <br>
-                                <a href="https://medium.com/@yamanbsr/rfm-analysis-for-customer-segmentation-29c8c7e04f5c">Application of RFM</a> 
-                            </p>
-
 
                         </div> <!-- end s-entry__entry-content -->
 
@@ -207,18 +320,18 @@
                                 <div class="entry-cat-links meta-blk">
                                     <div class="cat-links">
                                         <span>Tema: </span> 
-                                        <a href="#0"> Visión artificial </a>
-                                        <a href="#0"> Diseño de experimentos </a>
+                                        <a href="topicos/clustering.html">Clustering</a>
+                                        <a href="topicos/regresion.html">Regresión</a>
                                     </div>
 
                                     <span>Fecha:</span>
-                                    Oct 5, 2020
+                                    Ene 7, 2025
                                 </div>
 
                                 <div class="entry-tags meta-blk">
                                     <span class="tagtext">Etiquetas</span>
                                     <a href="#">Python</a>
-                                    <a href="#">Keras</a>
+                                    <a href="#">Power BI</a>
                                 </div>
 
                             </div>
@@ -227,15 +340,15 @@
 
                         <div class="s-content__pagenav">
                             <div class="prev-nav">
-                                <a href="cafe.html" rel="prev">
-                                    <span>Previous</span>
-                                    Clasificación de granos de Café
+                                <a href="clientes.html" rel="next">
+                                    <span>Siguiente</span>
+                                    Segmentación de clientes
                                 </a>
                             </div>
                             <div class="next-nav">
-                                <a href="cafe.html" rel="next">
-                                    <span>Next</span>
-                                    Madres
+                                <a href="https://github.com/oecorrechag/Proyecto-Mexico" rel="prev">
+                                    <span>Previo</span>
+                                    Clasificación de lenguaje de señas
                                 </a>
                             </div>
                          </div> <!-- end s-content__pagenav -->
@@ -257,7 +370,7 @@
             <div class="row">
                 <div class="column">
                     <div class="ss-copyright">
-                        <span>© Copyright 2024</span> 
+                        <span>© Copyright 2025</span> 
                         <!-- <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span> -->
                     </div> <!-- end ss-copyright -->
                 </div>
