@@ -146,153 +146,43 @@
                             
                             <h2>Visualización de datos</h2>
 
-                            <img src="images\projects\clientes\codo.png"  alt="codo">
+                            <img src="images\projects\calculadora\region.png"  alt="mejor y peor region">
+
+                            <p>
+                                El análisis revela una marcada diferencia entre las regiones Caribe y Pacífica en cuanto a indicadores de bienestar emocional. La región Caribe se destaca por sus altos niveles de felicidad, mientras que la región Pacífica presenta los índices más bajos de felicidad y los más altos de tristeza.
+                            </p>
+
+                            <img src="images\projects\calculadora\mejores_departamentos.png"  alt="mejores departamentos">
+
+                            <img src="images\projects\calculadora\peores_departamentos.png"  alt="peores departamentos">
     
                             <p>
-                                El dashboard y el código fuente constituyen la base para una exploración profunda y detallada de 
-                                los datos, ofreciendo una visión holística y granular del fenómeno en estudio
+                                El estudio revela un marcado contraste entre los departamentos de San Andrés y Caldas, por un lado, y Cauca y Guaviare, por otro. Los primeros se caracterizan por altos niveles de felicidad y bajos índices de tristeza, mientras que los segundos presentan la situación inversa.
                             </p> 
 
                             <div>
                                 
-                                <img src="images\projects\clientes\tsne-kmeans.png"  alt="tsne-kmeans">
-
-                                <img src="images\projects\clientes\tsne-gmm.png"  alt="tsne-gmm">
+                                <img src="images\projects\calculadora\matriz.png"  alt="matriz">
 
                             </div>
-
-                            <div class="column large-12">
-
-                                <h3>Resumen de medias por grupo</h3>
-                                
-                                <div class="table-responsive">
-            
-                                    <table>
-                                            <thead>
-                                            <tr>
-                                                <th>Grupo</th>
-                                                <th>Unidades</th>
-                                                <th>Recencia</th>
-                                                <th>Frecuencia</th>
-                                                <th>Monetario</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>0</td>
-                                                <td>144</td>
-                                                <td>46.9</td>
-                                                <td>11</td>
-                                                <td>939.38</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>75</td>
-                                                <td>286.7</td>
-                                                <td>13.17</td>
-                                                <td>1149.48</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>167</td>
-                                                <td>47.8</td>
-                                                <td>19.5</td>
-                                                <td>1845.1</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>249</td>
-                                                <td>43.8</td>
-                                                <td>15.52</td>
-                                                <td>1363.7</td>
-                                            </tr>
-                                            </tbody>
-                                    </table>
-            
-                                </div>
-            
-                            </div>
-
-                            <p>La documentación se complementa con una tabla detallada que presenta los estadísticos básicos de cada 
-                                grupo, ofreciendo una visión exhaustiva de los datos.</p>
 
                             <h2>Recomendaciones</h2>
 
-                            <div class="row">
-                
-                                    <dl class="dictionary-style">
-                                        <dt><strong>Grupo 0: Clientes nuevos y ocasionales</strong></dt>
-                                            <dd>
-                                                Ofertas de bienvenida y programas de fidelización sencillos: <br>
-                                                Implementar descuentos especiales para la primera compra o programas de puntos que 
-                                                permitan acumular beneficios a corto plazo. Esto incentivará a estos clientes a 
-                                                realizar compras repetidas y a sentirse valorados.
-                                            </dd>
-                                            <dd>
-                                                Marketing de contenidos enfocado en productos básicos y tendencias actuales: <br>
-                                                Crear contenido en redes sociales y el blog de la tienda que destaque productos 
-                                                versátiles y fáciles de combinar, así como las últimas tendencias de moda. Esto 
-                                                ayudará a estos clientes a descubrir nuevos estilos y a sentirse más seguros al 
-                                                realizar sus compras.
-                                            </dd>
-                                    
-                                            
-                                            <dt><strong>Grupo 1: Grandes gastadores esporádicos</strong></dt>
-                                            <dd>
-                                                Programas de fidelización exclusivos y experiencias personalizadas: <br>
-                                                Ofrecer beneficios exclusivos como descuentos adicionales, acceso anticipado a 
-                                                nuevas colecciones o atención personalizada de un estilista. Esto hará que se 
-                                                sientan especiales y los incentivará a realizar compras de mayor valor.
-                                            </dd>
-                                            <dd>
-                                                Marketing de lujo y productos premium: <br>
-                                                Destacar la calidad y exclusividad de los productos, utilizando imágenes de alta 
-                                                calidad y descripciones detalladas. Además, ofrecer opciones de personalización o 
-                                                productos únicos para satisfacer sus gustos más exigentes.
-                                            </dd>
-                                    
+                                <p>
+                                    Aunque el modelo de clasificación optimizado con Optuna muestra un buen desempeño general, se observa una disminución en su precisión al clasificar los niveles más altos de felicidad. Los resultados sugieren que dividir el conjunto de datos en dos grupos (felicidad mayor o menor a 8) podría mejorar significativamente la capacidad del modelo para distinguir entre los niveles superiores.
+                                </p>
 
-                                            <dt><strong>Grupo 2: Clientes leales y de alto valor</strong></dt>
-                                            <dd>
-                                                Programas de fidelización con beneficios escalonados: <br> 
-                                                Implementar un programa de fidelización que ofrezca beneficios cada vez 
-                                                más atractivos a medida que los clientes aumentan su nivel de gasto. 
-                                                Esto reforzará su lealtad y los motivará a seguir comprando.
-                                            </dd>
-                                            <dd>
-                                                Eventos exclusivos y programas de embajadores: <br> 
-                                                Organizar eventos especiales para estos clientes, como pre-lanzamientos de 
-                                                colecciones o talleres de estilo. Además, invitarlos a formar parte de un 
-                                                programa de embajadores para que recomienden la marca a sus conocidos.
-                                            </dd>
-
-
-                                            <dt><strong>Grupo 3: Clientes regulares</strong></dt>
-                                            <dd>
-                                                Programas de recompensas por referidos: <br> 
-                                                Implementar un programa que recompense a los clientes por recomendar la tienda 
-                                                a sus amigos y familiares. Esto ayudará a aumentar la base de clientes y a 
-                                                fortalecer la relación con los clientes existentes.
-                                            </dd>
-                                            <dd>
-                                                Personalización de ofertas basadas en el historial de compras: <br> 
-                                                Utilizar el historial de compras de cada cliente para enviar ofertas personalizadas 
-                                                y relevantes. Esto aumentará la probabilidad de que realicen nuevas compras y 
-                                                les mostrará que la tienda se preocupa por sus preferencias.
-                                            </dd>
-                                    
-                                    </dl>
-                
-    
-                
-                            </div> <!-- end row -->
+                                <p>
+                                    Se construyó una base de datos familiar, incluyendo relaciones entre familiares directos y ampliados. Debido a la falta de datos, se omitió la inclusión de mascotas. Se realizó una cuidadosa distinción entre conceptos de familia y parentesco, y se enriqueció la información de cada individuo al agregar múltiples relaciones. Además, se identificaron y corrigieron las familias con información incompleta
+                                </p>
 
 
                             <div>
 
                                 <h2>Dashboard</h2>
 
-                                <img src="images\projects\clientes\dash.png"  alt="dash">
+                                <img src="images\projects\calculadora\dash.png"  alt="dash Mapa">
+                                <img src="images\projects\calculadora\dash2.png"  alt="dash Network">
 
                             </div>
 
