@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Clasificación de peptidos</title>
+    <title>Clasificación de abandono</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -94,14 +94,14 @@
 
                     <div class="s-content__media">
                         <div class="s-content__post-thumb center-image">
-                            <img src="images/thumbs/masonry/pep-600.jpg" 
-                                 srcset="images/thumbs/masonry/pep-1200.jpg 2100w, 
-                                         images/thumbs/masonry/pep-600.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="peptidos">
+                            <img src="images/thumbs/masonry/startups-600.jpg" 
+                                 srcset="images/thumbs/masonry/startups-1200.jpg 2100w, 
+                                         images/thumbs/masonry/startups-600.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="startups">
                         </div>
                     </div> <!-- end s-content__media -->
 
                     <div class="s-content__entry-header">
-                        <h1 class="s-content__title s-content__title--post">Clasificación de peptidos</h1>
+                        <h1 class="s-content__title s-content__title--post">Clasificación de startups</h1>
                     </div> <!-- end s-content__entry-header -->
 
                     <div class="s-content__primary">
@@ -111,15 +111,15 @@
                             <!-- <h2>Problema</h2> -->
 
                             <p class="lead">
-                                La clasificación de péptidos es una tarea fundamental en bioinformática y biología computacional, que busca categorizar estas cadenas cortas de aminoácidos según sus propiedades, funciones o estructuras. Los péptidos desempeñan roles cruciales en procesos biológicos, como la señalización celular, la respuesta inmune y la regulación metabólica, por lo que su clasificación permite entender mejor su comportamiento y potenciales aplicaciones en medicina, farmacología y biotecnología. Para abordar este desafío, se emplean técnicas de ciencia de datos y machine learning, como modelos de clasificación supervisada, que utilizan características derivadas de secuencias aminoacídicas, estructuras tridimensionales o propiedades fisicoquímicas.
+                                En el dinámico ecosistema de las startups, identificar aquellas en riesgo de quiebra es crucial para inversores, analistas y emprendedores. Las startups que fracasan suelen presentar patrones comunes, como una mala gestión financiera, falta de adaptación al mercado, o un modelo de negocio insostenible. Por otro lado, aquellas que prosperan suelen destacar por su capacidad de innovación, escalabilidad y una ejecución eficiente.
                             </p> 
 
-                            <img src="images\projects\peptidos\peptidos.png"  alt="peptidos">
+                            <img src="images\projects\startups\importance_rf.png"  alt="importance_rf">
 
                             <h2>Objetivo</h2>
     
                             <p>
-                                El objetivo de la clasificación entre 0 y 1 es asignar una etiqueta binaria (0 o 1) a cada instancia de un conjunto de datos, basándose en sus características. Esto permite distinguir entre dos clases o categorías, como péptidos activos vs. no activos, o cualquier otra dicotomía relevante, con el fin de predecir su comportamiento o propiedad específica.
+                                La razón detrás de estos sucesos radica en una combinación de factores internos (como la falta de capital, errores en la toma de decisiones o un equipo inexperto) y externos (como cambios en el mercado, competencia agresiva o condiciones económicas adversas). Analizar estos factores mediante técnicas de ciencia de datos, como la clasificación de datos y el análisis predictivo, permite predecir el éxito o fracaso de una startup, ofreciendo insights valiosos para la toma de decisiones informadas.
                             </p>
 
                             <h2>Metodologia</h2>
@@ -131,18 +131,12 @@
                             <h2>Datos utilizados</h2>
 
                             <p>
-                                El conjunto de datos recopilado se corresponde muestras de laboratorio.
+                                En este estudio, los datos son obtenidos de un sitio web dedicado a startups, lo que permite analizar estos factores mediante técnicas de ciencia de datos, como la clasificación de datos y el análisis predictivo.
                             </p> 
-
-                            <ul>
-                                <li>Muestras de entrenamiento: 12 402 (70%)</li>
-                                <li>Muestras de prueba: 3 545 (20%)</li>
-                                <li>Muestras de validación: 1 771 (10%)</li>
-                            </ul>
                             
                             <h2>Visualización de datos</h2>
 
-                            <img src="images\projects\peptidos\cadena.png"  alt="cadena">
+                            <img src="images\projects\startups\tecnologia.png"  alt="tecnologia">
     
                             <p>
                                 El retiro de valores atípicos es un paso crucial en el preprocesamiento de datos para mejorar la calidad de los modelos predictivos. En este estudio, se utilizó Isolation Forest, un algoritmo eficiente para detectar anomalías, con el fin de identificar y eliminar observaciones atípicas en el conjunto de datos. Posteriormente, se optimizaron los hiperparámetros del modelo Random Forest mediante Optuna, una herramienta de optimización bayesiana que permite encontrar la mejor combinación de parámetros de manera automatizada. Se realizaron 100 experimentos para evaluar diferentes configuraciones, ajustando parámetros como el número de árboles, la profundidad máxima y el criterio de división. Este enfoque permitió no solo mejorar la precisión del modelo, sino también garantizar su robustez y generalización, demostrando la importancia de combinar técnicas avanzadas de preprocesamiento y optimización en proyectos de ciencia de datos.
@@ -150,30 +144,43 @@
 
                             <div>
                                 
-                                <img src="images\projects\peptidos\matrix.png"  alt="matrix">
+                                <img src="images\projects\startups\riesgo.png"  alt="riesgo">
 
                             </div>
 
-                            <p>Aquí se presenta la matriz de confusión obtenida tras aplicar la optimización de hiperparámetros a las muestras de validación, la cual refleja el desempeño del modelo en términos de verdaderos positivos, falsos positivos, verdaderos negativos y falsos negativos. Esta matriz permite visualizar la capacidad del modelo para clasificar correctamente las instancias en cada categoría. Para un análisis más detallado, otras métricas de evaluación sobre los demas conjuntos de muestras, se encuentran implementadas y disponibles en el código adjunto, proporcionando una visión completa del rendimiento del modelo.</p>
-
                             <h2>Resultados</h2>
-    
-                            <p>
-                                Los resultados obtenidos indican que el modelo optimizado con Optuna presenta el mejor rendimiento en términos menor cantidad de arboles. Sin embargo, se observó una mayor dificultad en la clasificación precisa de la categoria 1 peptidos activos.
-                            </p> 
+
+                            <p> Al analizar el modelo, se encontró que la variable country presenta significancia estadística para el modelo. El valor de la variable country asociado con el mayor riesgo de abandono es country=4 Canada, mientras que el valor con la menor probabilidad de abandono corresponde a country=14 - 'no registrado' y country=13 - Reino Unido. Estos resultados sugieren que el país en el que opera una startup puede influir significativamente en su probabilidad de supervivencia o abandono, lo que resalta la importancia de considerar factores geográficos en el análisis de riesgos.</p>
+                            <p> El modelo desarrollado es de carácter exploratorio, ya que no logró un ajuste óptimo y solo evidenció que la variable country es la única significativa para la predicción del riesgo de abandono. Por lo tanto, los resultados obtenidos no son concluyentes y deben interpretarse con precaución, sirviendo únicamente como un análisis preliminar. </p>
+                            <p> En este contexto exploratorio, se observaron las siguientes tendencias: </p>
+                            <ul>
+                                <li>Número de inversiones: Cuando el número de inversiones aumenta en una unidad, el riesgo de abandono disminuye en un factor del 5,0 %.</li>
+                                <li>Cambio de industria: Cuando hay un cambio de industria, el riesgo de abandono disminuye en un factor del 16,0 %.</li>
+                                <li>Cambio de país: En promedio, el cambio de país reduce el riesgo de abandono en un factor del 12,0 %.</li>
+                            </ul>
+                            <p> Los datos indican una notable diferencia en las tasas de supervivencia de startups entre Canadá y el Reino Unido. En Canadá, después de 3 años, menos del 20% de las startups logran mantenerse operativas. Por otro lado, en el Reino Unido, la tasa de supervivencia es significativamente mayor, alcanzando aproximadamente el 60%. </p>
+                            <p> Estos hallazgos sugieren posibles relaciones que podrían ser exploradas en futuros análisis con modelos más robustos y datos adicionales. Sin embargo, dado el carácter preliminar del modelo, no se pueden extraer conclusiones definitivas, y se recomienda profundizar en la investigación para validar estas tendencias. </p>
+                            <p> Estos hallazgos resaltan la importancia de considerar el contexto geográfico al analizar el desempeño de las startups y diseñar estrategias para mejorar su supervivencia. Además, sugieren la necesidad de investigar más a fondo los factores específicos que contribuyen a estas diferencias, con el fin de implementar políticas y prácticas que fomenten un ecosistema más robusto para las startups en regiones con tasas de supervivencia más bajas. </p>
 
                             <h2>Sugerencias</h2>
                             
-                            <p>
-                                Realizar un nuevo diseño de experimento. Aumentar las muestras, ya que estos modelos pueden ser potencializados con mayores y mejores muestras.
-                            </p>
+                            <p> Se recomienda ampliar el conjunto de datos utilizado en el análisis para mejorar la capacidad predictiva del modelo. Adicionalmente, sería beneficioso incorporar información más detallada sobre las startups, como: </p>
+                            <ul>
+                                <li>Ingresos y egresos: Para evaluar la salud financiera y la sostenibilidad económica.</li>
+                                <li>Número de empleados: Como indicador del tamaño y la capacidad operativa.</li>
+                                <li>Proyectos en desarrollo: Para entender el enfoque estratégico y la diversificación de la empresa.</li>
+                                <li>Edad de la startup: Como factor que puede influir en su madurez y estabilidad.</li>
+                                <li>Fuentes de financiamiento: Para analizar la dependencia de capital externo y su impacto en el riesgo de abandono.</li>
+                            </ul>
+
+                            <p>  Estas variables adicionales podrían ser significativas para predecir el abandono y mejorar la precisión del modelo. Además, se sugiere explorar técnicas de modelización más avanzadas y validar los resultados con métodos robustos de evaluación, como la validación cruzada, para garantizar la confiabilidad de las conclusiones. </p>
 
                             <h2>Adicionales</h2>
                             
                             <p>
                             
                                 <ul>
-                                    <li>Link a repositorio: <a href="https://github.com/oecorrechag/Project-China">Github</a></li>
+                                    <li>Link a repositorio: <a href="https://github.com/oecorrechag/Project-British">Github</a></li>
                                 </ul>
                                 
                             </p>
@@ -191,7 +198,7 @@
                                     </div>
 
                                     <span>Fecha:</span>
-                                    Jun 25, 2025
+                                    March 19, 2025
                                 </div>
 
                                 <div class="entry-tags meta-blk">
@@ -205,15 +212,15 @@
 
                         <div class="s-content__pagenav">
                             <div class="prev-nav">
-                                <a href="calculadora.html" rel="next">
+                                <a href="banco.html" rel="next">
                                     <span>Previo</span>
-                                    Calculadora de la felicidad
+                                    Identificación de transacciones atípicas
                                 </a>
                             </div>
                             <div class="next-nav">
-                                <a href="banco.html" rel="next">
+                                <a href="https://github.com/oecorrechag/Proyecto-Mexico" rel="next">
                                     <span>Siguiente</span>
-                                    Identificación de transacciones atípicas
+                                    Identificación de lenguaje de señas
                                 </a>
                             </div>
                          </div> <!-- end s-content__pagenav -->
