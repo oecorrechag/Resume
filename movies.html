@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Sistema de recomendación de películas</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header s-header--opaque">
+
+        <div class="s-header__logo">
+            <a class="logo" href="https://oecorrechag.github.io/Resume/">
+                <img src="images/logo.png"  alt="Homepage">
+            </a>
+        </div>
+
+        <div class="row s-header__navigation">
+
+            <nav class="s-header__nav-wrap">
+
+                <h3 class="s-header__nav-heading h6">Navigate to</h3>
+
+                <ul class="s-header__nav">
+                    <li><a href="https://oecorrechag.github.io/Resume/" title="">Home</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Categories</a>
+                        <ul class="sub-menu">
+                            <li><a href="topicos/clasificacion.html"> Clasificación </a></li>
+                            <li><a href="topicos/clustering.html"> Clustering </a></li>
+                            <li><a href="topicos/regresion.html"> Regresión </a></li>
+                            <li><a href="topicos/recomendacion.html"> Sistema de recomendación </a></li>
+                            <li><a href="topicos/descriptivo.html"> Análisis descriptivo y otros </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="includes/contact.html" title="">Contact</a></li>
+                </ul> <!-- end s-header__nav -->
+
+                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
+
+            </nav> <!-- end s-header__nav-wrap -->
+
+        </div> <!-- end s-header__navigation -->
+
+        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- content
+    ================================================== -->
+    <section class="s-content">
+
+        <div class="row">
+            <div class="column large-12">
+
+                <article class="s-content__entry format-standard">
+
+                    <div class="s-content__media">
+                        <div class="s-content__post-thumb center-image">
+                            <img src="images/thumbs/masonry/movies-600.jpg" 
+                                 srcset="images/thumbs/masonry/movies-1200.jpg 2100w, 
+                                         images/thumbs/masonry/movies-600.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="movies">
+                        </div>
+                    </div> <!-- end s-content__media -->
+
+                    <div class="s-content__entry-header">
+                        <h1 class="s-content__title s-content__title--post">Sistema de recomendación de películas</h1>
+                    </div> <!-- end s-content__entry-header -->
+
+                    <div class="s-content__primary">
+
+                        <div class="s-content__entry-content">
+
+                            <!-- <h2>Problema</h2> -->
+
+                            <p class="lead">
+                                En la era del streaming, los usuarios suelen buscar películas que se alineen con sus preferencias emocionales o descriptivas (ej.: "quiero una película nostálgica sobre amistad en los 90"). Este proyecto propone un sistema de recomendación de películas basado en texto libre, utilizando técnicas de Procesamiento de Lenguaje Natural (NLP) y modelos de embeddings para traducir descripciones en lenguaje natural a sugerencias personalizadas. A diferencia de los filtros tradicionales (género, año), este sistema interpreta la intención semántica del usuario, ofreciendo resultados más dinámicos y relevantes.
+                            </p> 
+
+                            <!-- <img src="images\projects\clientes\segmentacion.png"  alt="tsne-gmm"> -->
+
+                            <h2>Objetivo</h2>
+    
+                            <p>
+                                IDesarrollar un modelo que recomiende películas basado en descripciones de texto libre. Calcular similitud entre la entrada del usuario y una base de datos de sinopsis de películas.
+                            </p>
+
+                            <h2>Metodologia</h2>
+    
+                            <p>
+                                CRISP-DM
+                            </p>
+
+                            <!-- <h2>Datos utilizados</h2>
+
+                            <p>
+                                Este conjunto de datos se obtuvo a partir de las respuestas de la encuesta de calidad de vida. <br>
+                                DANE: <a href="https://microdatos.dane.gov.co/index.php/catalog/827">Microdatos</a>
+                            </p>  -->
+                            
+                            <h2>Visualización de datos</h2>
+
+                            <img src="images\projects\movies\example1.png"  alt="example1">
+
+                            <p>
+                                El resultado del modelo se organiza en tres elementos:
+
+                                Título de la película recomendada.
+                                
+                                Sinopsis de la película.
+                                
+                                Término(s) clave que justifican la recomendación.
+                            </p>
+
+                            <img src="images\projects\movies\example2.png"  alt="example1">
+
+                            <img src="images\projects\movies\example4.png"  alt="example2">
+
+                            <!-- <p>
+                                El estudio revela un marcado contraste entre los departamentos de San Andrés y Caldas, por un lado, y Cauca y Guaviare, por otro. Los primeros se caracterizan por altos niveles de felicidad y bajos índices de tristeza, mientras que los segundos presentan la situación inversa.
+                            </p> 
+
+                            <div>
+                                
+                                <img src="images\projects\calculadora\matriz.png"  alt="matriz">
+
+                            </div> -->
+
+                            <h2>Conclusiones</h2>
+
+                                <p>
+                                    Este proyecto demuestra cómo el NLP y los sistemas de recomendación semántica pueden mejorar la experiencia de búsqueda de contenido audiovisual, yendo más allá de los filtros estructurados.
+                                </p>
+<!-- 
+                            <div>
+
+                                <h2>Dashboard</h2>
+
+                                <img src="images\projects\calculadora\dash.png"  alt="dash Mapa">
+                                <img src="images\projects\calculadora\dash2.png"  alt="dash Network">
+
+                            </div> -->
+
+                            <h2>Adicionales</h2>
+                            
+                            <p>
+                            
+                                <ul>
+                                    <li>Link a repositorio: <a href="https://github.com/oecorrechag/Project-Canada">Github</a></li>
+                                </ul>
+                                
+                            </p>
+
+                        </div> <!-- end s-entry__entry-content -->
+
+                        <div class="s-content__entry-meta">
+
+                            <div class="meta-bottom">
+                                
+                                <div class="entry-cat-links meta-blk">
+                                    <div class="cat-links">
+                                        <span>Tema: </span> 
+                                        <a href="topicos/recomendacion.html">Sistema de recomendación</a>
+                                    </div>
+
+                                    <span>Fecha:</span>
+                                    Abr 29, 2025
+                                </div>
+
+                                <div class="entry-tags meta-blk">
+                                    <span class="tagtext">Etiquetas</span>
+                                    <a href="#">Python</a>
+                                </div>
+
+                            </div>
+
+                        </div> <!-- s-content__entry-meta -->
+
+                        <div class="s-content__pagenav">
+                            <div class="prev-nav">
+                                <a href="cafe.html" rel="prev">
+                                    <span>Previo</span>
+                                    Clasificación de granos de Café
+                                </a>
+                            </div>
+                            <div class="next-nav">
+                                <a href="clientes.html" rel="next">
+                                    <span>Siguiente</span>
+                                    Segmentación de clientes
+                                </a>
+                            </div>
+                         </div> <!-- end s-content__pagenav -->
+
+                    </div> <!-- end s-content__primary -->
+                </article> <!-- end entry -->
+
+            </div> <!-- end column -->
+        </div> <!-- end row -->
+
+    </section> <!-- end s-content -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="column">
+                    <div class="ss-copyright">
+                        <span>© Copyright 2025</span> 
+                        <!-- <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span> -->
+                    </div> <!-- end ss-copyright -->
+                </div>
+            </div> 
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+   </footer> <!-- end s-footer -->
+    
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
